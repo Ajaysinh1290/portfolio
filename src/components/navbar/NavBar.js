@@ -10,7 +10,7 @@ function NavBar() {
         if (element !== null) {
             console.log(element.offsetTop);
             window.scrollTo({
-                top:  elementId == 'root' ? 0 : element.offsetTop ,
+                top:  elementId == 'root' ? 0 : element.offsetTop - 100 ,
                 left: 0, behavior: "smooth"
             },);
             setMenuVisible(false);

@@ -13,7 +13,7 @@ import './Projects.css';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger
 import { useEffect, useRef } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger
 
