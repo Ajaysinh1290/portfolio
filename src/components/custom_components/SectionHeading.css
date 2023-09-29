@@ -1,0 +1,28 @@
+#sectionheading {
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 4vh 0vw;
+}
+@media (max-width: 1000px) {
+    #sectionheading {
+        font-size: 6vw;
+    }
+}
+
+
+@media (max-width:800px) {
+    #sectionheading {
+        font-size: 7vw;
+    }
+}
+
+
+@media (max-width:400px) {
+    #sectionheading {
+        font-size: 8vw;
+    }
+}

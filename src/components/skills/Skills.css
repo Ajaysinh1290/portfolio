@@ -1,0 +1,30 @@
+#skillsicons {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  justify-content: space-evenly;
+  margin : 10vh 2vw;
+}
+#iconcard {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+  padding: 1vw;
+  letter-spacing: 1.0px;
+  font-weight: 500;
+
+}
+
+@media (max-width:600px) {
+  #skillsicons {
+    grid-template-columns: repeat(2, 0fr);
+    gap: 10px;
+    margin: 0vw 3vw;
+  }
+  .vsCode {
+    display: none;
+    opacity: 0;
+  }
+
+}
+

@@ -1,0 +1,55 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    align-items: center;
+    gap: 5vw;
+    padding: 5vh;
+    z-index: 999;
+}
+#navbarsection {
+    position: fixed;
+    top: 00px;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar > a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+#menuicon {
+    z-index: 999;
+    display: none;/* Add this to make the icon clickable */
+}
+#menuiconimage {
+    cursor: pointer;
+}
+.menuopen {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    #menuicon {
+        display: flex;
+        align-items: center;
+        justify-content: end; /* This should be 'flex-end' */
+        padding: 2vh;
+        background-color: var(--main-bg-color);
+  
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menuopen {
+        display: flex;
+        padding-top: 0px;
+        flex-direction: column;
+    }
+}

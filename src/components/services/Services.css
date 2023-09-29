@@ -1,0 +1,34 @@
+#servicessection {
+    display: flex;
+    justify-content: space-around;
+    margin: 1vh 5vw;
+    padding: 5.5vh 5vw;
+    border: 1px solid #000;
+    box-shadow: 25px 20px var(--box-shadow-color);
+    transform: rotate(-6.5deg);
+    font-size: 1.2vw;
+    position: relative;
+    z-index : -1;
+}
+
+
+@media (max-width:1000px) {
+    #servicessection {
+        box-shadow: 16px 12px var(--box-shadow-color);
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    #servicessection {
+        box-shadow: 12px 10px var(--box-shadow-color);
+        font-size: 1.8vw;
+    }
+}
+@media (max-width: 500px) {
+    #servicessection {
+
+        box-shadow: 10px 8px var(--box-shadow-color);
+    }
+}
+

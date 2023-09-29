@@ -1,0 +1,139 @@
+#projectssection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+#project {
+  display: flex;
+  flex-direction: row;
+  margin: 10vh 10vw;
+  text-align: start;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10vw;
+}
+#descriptionsection {
+  max-width: 500px;
+  justify-content: start;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+#projectimage {
+  max-height: 35vw;
+  max-width: 30vw;
+  position: relative;
+  padding: 10px;
+  border: 2px solid #000000;
+  /* border: 2px solid #000; */
+  /* box-shadow: 1vw 1vw 0px 0px #3e3d3d; */
+}
+
+
+
+
+#projecttitle {
+  font-size: 32px;
+  font-weight: 500;
+}
+#projectsubTitle {
+  font-size: 24px;
+  color: #282727;
+}
+#projectdescription {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 1vw 0vw;
+  max-width: 400px;
+}
+
+#projectlink,
+#viewmorebutton {
+  text-decoration: none;
+  margin: 1vw 0vw;
+  padding: 1vw 3vw;
+  border: 1px solid #000;
+  box-shadow: 6px 6px 0px 0px var(--box-shadow-color);
+  color: #000;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+#viewmorebutton {
+  box-shadow: none;
+  width: min-content;
+  align-self: center;
+}
+/* #project {
+  perspective: 1000px; 
+}
+
+#projectimage {
+  transform: rotateY(90deg) translateZ(0);
+  transition: transform 1s;
+}
+
+#project:hover #projectimage {
+  transform: rotateY(0deg) translateZ(0px);
+} */
+
+@media (max-width: 1000px) {
+  #descriptionsection {
+    max-width: 300px;
+  }
+  #projecttitle {
+    font-size: 26px;  
+  }
+  #projectsubTitle {
+    font-size: 20px;
+  }
+  #projectimage {
+    max-height: 50vw;
+    max-width: 35vw;
+  }
+  #project {
+    margin: 6vh 8vw;
+  }
+}
+
+@media (max-width: 650px) {
+
+  #projectimage {
+    max-height: 100vw;
+    max-width: 70vw;
+    border: 2px solid #000000;
+  }
+  #project {
+    display: flex;
+    flex-direction: column !important;
+    margin: 4vh 10vw;
+  }
+  #projecttitle {
+    font-size: 22px;  
+    font-weight: 500;
+  }
+  #projectsubTitle {
+    font-size: 18px;
+  }
+  #descriptionsection {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  #projectssection {
+    gap: 1vh;
+  }
+  #projectlink,
+  #viewmorebutton {
+    width: 60%;
+    height: 40px;
+  }
+  #projectdescription { 
+    letter-spacing: 0px;
+  }
+
+  
+}

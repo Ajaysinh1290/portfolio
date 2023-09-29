@@ -1,0 +1,32 @@
+.about-text {
+  width: 35vw;
+  text-align: center;
+  line-height: 2.5;
+}
+#aboutsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .about-text {
+    width: 40vw;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-text {
+    width: 60vw;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-text {
+    width: 80vw;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+}
