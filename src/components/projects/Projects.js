@@ -1,52 +1,19 @@
 import SectionHeading from "../custom_components/SectionHeading";
-// import NineTeenFiveImage from "../../assets/nineteenfive_.png";
 import NineTeenFiveImage from "../../assets/nineteenfive.webp";
-// import SanskarPgImage from "../../assets/sanskar-pg-app_.png";
 import SanskarPgImage from "../../assets/sanskar-pg-app.webp";
-// import ListlyImage from "../../assets/listly_.png";
 import ListlyImage from "../../assets/listly.webp";
-// import CollegeManagerImage from "../../assets/college-manager_.png";
 import CollegeManagerImage from "../../assets/college-manager.webp";
 import ArrowUpRightIcon from "../../assets/arrow_up_right_32x.png";
 import ArrowRightIcon from "../../assets/arrow_right_32x.png";
 import './Projects.css';
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import ScrollTrigger
-import { useEffect, useRef } from "react";
 
 
-gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger
 
 function ProjectCard({ image, title, subtitle, description, isReverse, projectLink }) {
-  // Create a ref for the card container
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    const card = cardRef.current;
-
-    gsap.set(card, { rotationY: 0, z: 0, });
-
-    // Define a GSAP animation with a 3D translation effect
-    const cardAnimation = gsap.to(card, {
-      rotationY: 0, // Rotate in the Y-axis
-      z: 90,
-      duration: 1,
-      paused: false,
-    });
-
-    // Create a ScrollTrigger to trigger the animation when the card is in the viewport
-    ScrollTrigger.create({
-      trigger: card,
-      start: "top center", // Adjust the starting point as needed
-      end: "top center", // Adjust the ending point as needed
-      animation: cardAnimation,
-      toggleActions: "play none none none", // Play the animation when the card enters the viewport
-    });
-  }, []);
 
   return (
     <div id="project" style={{ flexDirection: !isReverse ? 'row' : 'row-reverse' }} >
-      <div id="projectimage-container"  ref={cardRef}>
+      <div id="projectimage-container">
         <img id="projectimage" className={isReverse ? 'right' : 'left'}  LazyLoadImage src={image} alt={title} />
       </div>
       <div id="descriptionsection">
