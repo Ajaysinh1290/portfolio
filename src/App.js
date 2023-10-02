@@ -16,7 +16,7 @@ import gsap from "gsap";
 import LoadingScreen from "./components/custom_components/Loading";
 function App() {
   const [loading, setLoading] = useState(true);
- 
+
   useEffect(() => {
 
 
@@ -29,10 +29,10 @@ function App() {
     const buttons = document.querySelectorAll("a");
     buttons.forEach((button) => {
       button.addEventListener("mouseenter", () => {
-        gsap.to(button, { scale: 1.1, duration: 0.2, ease: "power.InOut"  });
+        gsap.to(button, { scale: 1.1, duration: 0.2, ease: "power.InOut" });
       });
       button.addEventListener("mouseleave", () => {
-        gsap.to(button, { scale: 1, duration: 0.2  });
+        gsap.to(button, { scale: 1, duration: 0.2 });
       });
     });
   });
@@ -80,22 +80,20 @@ function App() {
   return (
     <div className="App"  >
         // Show the content when loading is false
-        <div  >
-          <MiniCircle/>
-          <NavBar  />
-          <Hero />
-          <Services />
-          <Divider angle="-5.03" />
-          <About />
-          <Divider angle="3.97" />
-          <Projects />
-          <Divider angle="-4.53" />
-          <WorkExperience />
-          <Divider angle="3.03" />
-          <Skills />
-          <Divider angle="-5.03" />
-          <Contact />
-        </div>
+        <MiniCircle />
+        <NavBar />
+        <Hero />
+        <Services />
+        <Divider angle="-5.03" />
+        <About />
+        <Divider angle="3.97" />
+        <Projects />
+        <Divider angle="-4.53" />
+        <WorkExperience />
+        <Divider angle="3.03" />
+        <Skills />
+        <Divider angle="-5.03" />
+        <Contact />
     </div>
   );
 }
