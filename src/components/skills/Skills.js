@@ -1,4 +1,3 @@
-import { LazyLoadComponent } from "react-lazy-load-image-component";
 import SectionHeading from "../custom_components/SectionHeading";
 import './Skills.css';
 
