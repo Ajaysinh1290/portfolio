@@ -2,8 +2,11 @@
 
 Welcome to my portfolio website! This site is built using React.js and features dynamic GSAP animations to create an engaging and interactive experience for visitors.
 
+
+
 ## Preview
-[<img src="https://github.com/Ajaysinh1290/portfolio/assets/63580687/be01c39e-2f2c-41aa-9be5-b2819a5d6513" width="100%">](https://ajaysinhrathod.in/)
+[![Portfolio Preview](https://github.com/Ajaysinh1290/portfolio/assets/63580687/eb7e855f-42fc-4cc8-a101-a792bcc7e585)](https://ajaysinhrathod.in/)
+
 
 ## Features
 
