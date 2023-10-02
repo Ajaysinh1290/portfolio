@@ -1,4 +1,4 @@
-# Ajay Sinh Rathod's Portfolio
+# Ajaysinh Rathod's Portfolio
 
 Welcome to my portfolio website! This site is built using React.js and features dynamic GSAP animations to create an engaging and interactive experience for visitors.
 
