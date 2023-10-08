@@ -3,6 +3,7 @@
   grid-template-columns: repeat(3, 0fr);
   justify-content: space-evenly;
   margin : 10vh 2vw;
+
 }
 #iconcard {
   display: flex;

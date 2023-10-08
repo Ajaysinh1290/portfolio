@@ -5,16 +5,16 @@
   position: fixed;
   z-index: 1;
   border-radius: 50%;
-  background-color: #000;
-  margin-top: -8px;
-  border: 2px solid var(--main-bg-color);
-  box-shadow: 0px 0px 0px 1.2px #000000;
-  margin-left: -8px;
-  /* padding: 10x; */
   pointer-events: none;
-  top: -50px;
-  left: -50px;
+  /* top: -56px;
+  left: -56px; */
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background: white;
+  
 }
+
+
 
 @media (max-width : 600px) {
   #minicircle {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SectionHeading from "../custom_components/SectionHeading";
+import SectionHeading from "../custom_components/section_heading/SectionHeading";
 import "./WorkExperience.css";
 
 function WorkExperienceCard({
