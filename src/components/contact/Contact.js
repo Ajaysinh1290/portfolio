@@ -5,7 +5,8 @@ import instagram from '../../assets/social-media-icons/instagram.png';
 import linkedin from '../../assets/social-media-icons/linkedin.png';
 import twitter from '../../assets/social-media-icons/twitter.png';
 import youtube from '../../assets/social-media-icons/youtube.png';
-import SectionHeading from '../custom_components/SectionHeading';
+import leetcode from '../../assets/social-media-icons/leetcode.png';
+import SectionHeading from '../custom_components/section_heading/SectionHeading';
 
 function Contact() {
     return (
@@ -19,6 +20,8 @@ function Contact() {
                 <a href='https://www.linkedin.com/in/ajaysinh-rathod/' target='_blank'><img src={linkedin}/></a>
                 <a href='https://twitter.com/Ajaysin34751867' target='_blank'><img src={twitter}/></a>
                 <a href='https://www.youtube.com/@ajaysinhrathod' target='_blank'><img src={youtube}/></a>
+                {/* <a href='https://leetcode.com/ajaysinhrathod/' target='_blank'><img id='leetcode'  src={leetcode}/></a> */}
+
             </div>
         </div>
     );

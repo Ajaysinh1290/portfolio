@@ -1,25 +1,18 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ajaysinh Rathod",
+  "name": "Ajaysinh Rathod's Portfolio",
+  "description": "I'm Ajaysinh Rathod, a tech enthusiast from India. I love exploring new ideas and turning them into digital reality. With a degree in Information Technology, I enjoy creating user-friendly apps, managing the technical stuff in the background, and making sure everything runs smoothly",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "64x64 32x32 24x24 16x16 192x192 256x256 512x512",
       "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "categories": ["Portfolio", "Web Development","Ajaysinh Rathod", "Software Engineer", "Mobile Development", "UI Design"],
+  "lang": "en-US"
 }

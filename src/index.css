@@ -2,9 +2,13 @@
   /* --main-bg-color: #eeeee6; */
   --main-bg-color: #fff;
   --box-shadow-color : #000000;
+  /* cursor: none; */
+  caret-color: transparent;
 }
 
-
+a {
+  cursor: none;
+}
 
 body {
   margin: 0;

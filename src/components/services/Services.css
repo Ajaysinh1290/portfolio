@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     margin: 1vh 5vw;
-    padding: 5.5vh 5vw;
+    padding: 3vw 5vw;
     border: 1px solid #000;
     box-shadow: 25px 20px var(--box-shadow-color);
     transform: rotate(-6.5deg);
