@@ -1,10 +1,10 @@
 import SectionHeading from "../custom_components/section_heading/SectionHeading";
-import NineTeenFiveImage from "../../assets/nineteenfive.webp";
-import SanskarPgImage from "../../assets/sanskar-pg-app.webp";
-import ListlyImage from "../../assets/listly.webp";
-import CollegeManagerImage from "../../assets/college-manager.webp";
-import ArrowUpRightIcon from "../../assets/arrow_up_right_32x.png";
-import ArrowRightIcon from "../../assets/arrow_right_32x.png";
+import NineTeenFiveImage from "../../assets/images/nineteenfive.webp";
+import SanskarPgImage from "../../assets/images/sanskar-pg-app.webp";
+import ListlyImage from "../../assets/images/listly.webp";
+import CollegeManagerImage from "../../assets/images/college-manager.webp";
+import ArrowUpRightIcon from "../../assets/icons/arrow-up-right.svg";
+import ArrowRightIcon from "../../assets/icons/arrow-right.svg";
 import './Projects.css';
 
 
@@ -14,7 +14,7 @@ function ProjectCard({ image, title, subtitle, description, isReverse, projectLi
   return (
     <div id="project" style={{ flexDirection: !isReverse ? 'row' : 'row-reverse' }} >
       <div id="projectimage-container">
-        <img id="projectimage" className={isReverse ? 'right' : 'left'}  LazyLoadImage src={image} alt={title} />
+        <img id="projectimage" className={isReverse ? 'right' : 'left'}  src={image} alt={title} />
       </div>
       <div id="descriptionsection">
         <div id="projecttitle">{title}</div>

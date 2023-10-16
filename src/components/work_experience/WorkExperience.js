@@ -10,7 +10,6 @@ function WorkExperienceCard({
     isFirst,
     isMobileLayout
 }) {
-    console.log(isMobileLayout);
     return (
 
         <div id="experience">

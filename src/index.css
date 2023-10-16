@@ -2,8 +2,9 @@
   /* --main-bg-color: #eeeee6; */
   --main-bg-color: #fff;
   --box-shadow-color : #000000;
-  /* cursor: none; */
+  cursor: none;
   caret-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
