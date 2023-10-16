@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './NavBar.css';
 import gsap from 'gsap';
-
+import menuIcon from '../../assets/icons/menu.svg';
+import crossIcon from '../../assets/icons/cross.svg';
 
 function NavBar() {
 
@@ -26,7 +27,7 @@ function NavBar() {
     useEffect(() => {
         window.addEventListener("resize", closeMenuIfWideScreen);
         let element = document.getElementById("navbarsection");
-        gsap.to(element,{pin : true,zIndex : 99999, x : 0, y: 0});
+        gsap.set(element,{pin : true,zIndex : 99999, x : 0, y: 0});
         return () => {
             window.removeEventListener("resize", closeMenuIfWideScreen);
         }
@@ -36,12 +37,11 @@ function NavBar() {
 
     const [menuVisible, setMenuVisible] = useState(false);
     function toggleMenu() {
-        console.log(menuVisible);
         setMenuVisible(!menuVisible);
     }
     return (
         <div id='navbarsection'>
-            <div id="menuicon" ><img width="32" height="32" onClick={toggleMenu} id="menuiconimage" src={menuVisible ? "https://img.icons8.com/ios/50/delete-sign--v1.png" : "https://img.icons8.com/ios/32/menu--v1.png "} alt="menu--v1" /></div>
+            <div id="menuicon" ><img width="42" onClick={toggleMenu} id="menuiconimage" src={menuVisible ? crossIcon : menuIcon} alt="menu--v1" /></div>
             <div className={`navbar ${menuVisible ? 'menuopen' : ''}`}>
                 <a onClick={() => scrollToElem({ elementId: "root" })}>home</a>
                 <a onClick={() => scrollToElem({ elementId: "aboutsection" })} >about</a>

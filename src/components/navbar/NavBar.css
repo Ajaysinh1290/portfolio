@@ -23,7 +23,7 @@
 
 #menuicon {
     z-index: 999;
-    display: none;/* Add this to make the icon clickable */
+    display: none;
 }
 #menuiconimage {
     cursor: pointer;
@@ -37,10 +37,9 @@
     #menuicon {
         display: flex;
         align-items: center;
-        justify-content: end; /* This should be 'flex-end' */
+        justify-content: end; 
         padding: 2vh;
         background-color: var(--main-bg-color);
-  
     }
 
     .navbar {

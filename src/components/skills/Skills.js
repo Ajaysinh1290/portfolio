@@ -5,7 +5,7 @@ import './Skills.css';
 function IconCard({ title, icon, iconDir }) {
     return (
         <div id="iconcard" className={title}>
-            <img width="30" height="30" LazyLoadComponent src={icon} alt={title} />
+            <img width="30" height="30" src={icon} alt={title} />
             <span>{title}</span>
         </div>
     );

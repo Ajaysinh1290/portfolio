@@ -7,7 +7,6 @@ const MiniCircle = () => {
 
   useEffect(() => {
     const changePosition = (event) => {
-      console.log("X:"+event.clientX+" Y:"+event.clientY);
       gsap.set(minicircleRef.current, { pin: true, x: event.clientX - 8  , y: event.clientY - 28 , zIndex: 999999 });
     };
     gsap.set(minicircleRef, { pin: true, zIndex: 999999 });
